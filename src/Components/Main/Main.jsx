@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import CollectionsContainer from '../CollectionsContainer/CollectionsContainer';
+import CardContainer from '../CardContainer/CardContainer';
 import axios from 'axios';
 
 const Main = () => {
@@ -22,7 +24,8 @@ const Main = () => {
 
     return ( 
         <div>
-
+            <CollectionsContainer/>
+            <CardContainer/>
         </div>
      );
 }
