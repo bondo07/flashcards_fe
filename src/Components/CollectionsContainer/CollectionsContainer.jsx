@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import CollectionsDropdown from '../CollectionsDropdown/CollectionsDropdown';
 
-const CollectionsContainer = ({collections}) => {
+const CollectionsContainer = ({allCollections}) => {
 
 
     return ( 
         <div>
-            <CollectionsDropdown/>
+            <h1>Collections:</h1>
+            <CollectionsDropdown allCollections={allCollections}/>
         </div>
      );
 }

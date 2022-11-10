@@ -24,7 +24,7 @@ const Main = () => {
 
     return ( 
         <div>
-            <CollectionsContainer/>
+            <CollectionsContainer allCollections={collections}/>
             <CardContainer/>
         </div>
      );

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
-const Collection = ({card}) => {
+const Collection = ({collection}) => {
     
+
+
+
     return ( 
         <div>
-
         </div>
      );
 }
