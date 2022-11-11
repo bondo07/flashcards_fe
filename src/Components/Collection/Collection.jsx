@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 
-const Collection = ({collection}) => {
+const Collection = ({collection, setActiveCollectionId}) => {
     
-
+    const handleSelect = () => {
+        setActiveCollectionId(collection.id)
+    }
 
 
     return ( 
-        <div>
-        </div>
+        <option onClick={handleSelect}>
+            {collection.title}
+        </option>
      );
 }
  

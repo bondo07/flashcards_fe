@@ -1,31 +1,27 @@
-import React, { useState } from 'react';
 import Collection from '../Collection/Collection';
 import './CollectionsDropdown.css'
 
-const CollectionsDropdown = (props) => {
+const CollectionsDropdown = ({collections, setActiveCollectionId, activeCollectionId}) => {
 
-    // const [open, setOpen] = useState(false);
+    const handleSelect = (e) => {
+        e.preventDefault();
+        setActiveCollectionId(activeCollectionId)
+    }
+   
 
-    // const handleClick = (e) => {
-    //     e.preventDefault();
-    //     let returnedCollections = collections.map((collection) => {blank
-
-    //     })
-    // }
 
     return ( 
         <div>
-            <select>
-                <options>Choose Collection ↓</options>
-                {props.allCollections.map((collection) => {
+            <select onClick={handleSelect}>
+                {collections.map((collection) => {
                     return(
-                        <option>{collection.title}</option>
+                        <Collection collection={collection}
+                        setActiveCollectionId={setActiveCollectionId}
+                        collections={collections}/>
                     )
                 })
                 }
             </select>
-            {/* <button type='button' className='dropdown_button' onClick={() => setOpen(!open)}>Choose Collection ↓</button> */}
-            <Collection/>
         </div>
      );
 }

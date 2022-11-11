@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import CollectionsDropdown from '../CollectionsDropdown/CollectionsDropdown';
 
-const CollectionsContainer = ({allCollections}) => {
+const CollectionsContainer = ({collections, setActiveCollectionId, setCollections, activeCollectionId}) => {
 
 
     return ( 
         <div>
             <h1>Collections:</h1>
-            <CollectionsDropdown allCollections={allCollections}/>
+            <CollectionsDropdown collections={collections}
+            setActiveCollectionId={setActiveCollectionId}
+            setCollections={setCollections}
+            activeCollectionId={activeCollectionId}/>
         </div>
      );
 }
