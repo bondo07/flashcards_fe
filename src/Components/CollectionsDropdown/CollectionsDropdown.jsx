@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Collection from "../Collection/Collection";
 import "./CollectionsDropdown.css";
 

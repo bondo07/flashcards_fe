@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 
-const Card = () => {
+const Card = ({cards, currentCardNum, showCard}) => {
+
+
     return ( 
-        <div></div>
+        <div>
+          <div>{showCard.word}</div>
+          <div>{showCard.definition}</div>
+        </div>
      );
 }
- 
+
 export default Card;
