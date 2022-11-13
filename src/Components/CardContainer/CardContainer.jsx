@@ -9,12 +9,12 @@ const CardContainer = ({cards, getAllCardsPerCollection, activeCollectionId}) =>
 
     return ( 
         <div>
-            <CardViewer cards={cards} 
-            getAllCardsPerCollection={getAllCardsPerCollection}
-            activeCollectionId={activeCollectionId}/>
+            <CardViewer cards={cards}
+            currentCard={currentCard}
+            setCurrentCard={setCurrentCard}/>
             <AddCard/>
         </div>
      );
 }
- 
+
 export default CardContainer;

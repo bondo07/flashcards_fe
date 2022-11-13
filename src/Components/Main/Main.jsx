@@ -27,7 +27,7 @@ const Main = () => {
 
     useEffect(() => {
         getAllCardsPerCollection();
-    }, [activeCollectionId]);
+    }, [activeCollectionId, cards, collections]);
 
 
 

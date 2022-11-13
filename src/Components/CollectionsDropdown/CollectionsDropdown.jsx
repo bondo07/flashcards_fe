@@ -15,9 +15,10 @@ const CollectionsDropdown = ({
   return (
     <div>
       <select onChange={handleSelect}>
-        {collections.map((collection) => {
+        {collections.map((collection, i) => {
           return (
             <Collection
+              key={i}
               collection={collection}
               setActiveCollectionId={setActiveCollectionId}
               collections={collections}

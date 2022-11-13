@@ -2,13 +2,10 @@ import React, { useState } from 'react';
 
 const Collection = ({collection, setActiveCollectionId}) => {
     
-    const handleSelect = () => {
-        setActiveCollectionId(collection.id)
-    }
 
 
     return ( 
-        <option onClick={handleSelect}>
+        <option>
             {collection.title}
         </option>
      );
