@@ -2,3 +2,9 @@ img {
     width: 5%;
     height: auto;
 }
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
