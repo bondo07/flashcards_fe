@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import AddCardButton from '../AddCardButton/AddCardButton';
-import EditCardbutton from '../EditCardButton/EditCardButton';
+import EditCardButton from '../EditCardButton/EditCardButton';
 import Card from '../Card/Card';
 import NextPrevButton from '../NextPrevButton/NextPrevButton';
 
-const CardViewer = ({cards, collection, currentCard, setShowAddModal}) => {
+const CardViewer = ({cards, collection, currentCard, setShowEditModal, setShowAddModal}) => {
 
     const [currentCardNum, setCurrentCardNum] = useState(0)
     const showCard = cards[currentCardNum]

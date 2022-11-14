@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
 import './Modal.css'
 
 const Modal = ({title, onClose, children, show}) => {
     return show ?( 
-        <div className='modal-bg' onClick={onClose}>
+        <div className='modal-bg'>
             <div className='modal'>
                 <div className='modal-header'>
                     <h3>{title}</h3>
