@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddCardButton from '../AddCardButton/AddCardButton';
+import EditCardbutton from '../EditCardButton/EditCardButton';
 import Card from '../Card/Card';
 import NextPrevButton from '../NextPrevButton/NextPrevButton';
 
@@ -21,6 +22,7 @@ const CardViewer = ({cards, collection, currentCard, setShowAddModal}) => {
             currentCard={currentCard}
             />
             <AddCardButton setShowAddModal={setShowAddModal}/>
+            <EditCardButton setShowEditModal={setShowEditModal}/>
         </div>
      );
 }
