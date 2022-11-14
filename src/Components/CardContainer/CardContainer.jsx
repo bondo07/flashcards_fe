@@ -13,7 +13,8 @@ const CardContainer = ({cards, getAllCardsPerCollection, activeCollectionId}) =>
             currentCard={currentCard}
             setCurrentCard={setCurrentCard}
             getAllCardsPerCollection={getAllCardsPerCollection}/>
-            <AddCard/>
+            <AddCard getAllCardsPerCollection={getAllCardsPerCollection}
+            activeCollectionId={activeCollectionId}/>
         </div>
      );
 }
