@@ -11,6 +11,7 @@ const CardViewer = ({cards, collection, currentCard, setShowEditModal, setShowAd
 
     return ( 
         <div>
+            
             <Card cards={cards}
             collection={collection}
             currentCardNum={currentCardNum}

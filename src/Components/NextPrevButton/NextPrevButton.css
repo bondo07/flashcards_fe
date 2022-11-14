@@ -8,3 +8,11 @@
     color: #a7061c;
     cursor: pointer;
 }
+
+.next-button {
+    float: right;
+}
+
+.prev-button {
+    float: left;
+}
