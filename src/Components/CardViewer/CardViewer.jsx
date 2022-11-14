@@ -4,7 +4,7 @@ import EditCardButton from '../EditCardButton/EditCardButton';
 import Card from '../Card/Card';
 import NextPrevButton from '../NextPrevButton/NextPrevButton';
 
-const CardViewer = ({cards, collection, currentCard, setShowEditModal, setShowAddModal}) => {
+const CardViewer = ({cards, collection, currentCard, setShowEditModal, setShowAddModal, getAllCardsPerCollection}) => {
 
     const [currentCardNum, setCurrentCardNum] = useState(0)
     const showCard = cards[currentCardNum]

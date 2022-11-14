@@ -1,0 +1,10 @@
+.edit-card {
+    height: 27px;
+    width: 95px;
+    background-color: #ffd745c7;
+    border-radius: 5px;
+    border: none;
+    color: #a7061c;
+    font-weight: bold;
+    cursor: pointer;
+}

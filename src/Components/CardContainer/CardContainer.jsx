@@ -7,7 +7,7 @@ import './CardContainer.css'
 
 const CardContainer = ({cards, getAllCardsPerCollection, activeCollectionId}) => {
     
-    const [currentCard, setCurrentCard] = useState(1)
+    const [currentCard, setCurrentCard] = useState(0)
     const [showAddModal, setShowAddModal] = useState(false)
     const [showEditModal, setShowEditModal] = useState(false)
 
@@ -35,8 +35,7 @@ const CardContainer = ({cards, getAllCardsPerCollection, activeCollectionId}) =>
             onClose={handleCloseModal}>
                 <EditCard getAllCardsPerCollection={getAllCardsPerCollection}
                 activeCollectionId={activeCollectionId}
-                currentCard={currentCard}
-                cards={cards}/>
+                currentCard={currentCard}/>
             </Modal>
         </div>
      );

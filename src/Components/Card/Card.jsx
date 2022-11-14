@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './Card.css'
 
-const Card = ({cards, currentCardNum, showCard}) => {
+const Card = ({showCard}) => {
     const [flip, setFlip] = useState(false)
     const handleFlip = () => {
         setFlip(!flip)
     }
+
 
     return ( 
         <div
