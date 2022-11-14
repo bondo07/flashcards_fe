@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Card from '../Card/Card';
+import NextPrevButton from '../NextPrevButton/NextPrevButton';
 
 const CardViewer = ({cards, collection, currentCard}) => {
 
-    const [currentCardNum, setCurrentCardNum] = useState(1)
+    const [currentCardNum, setCurrentCardNum] = useState(0)
     const showCard = cards[currentCardNum]
 
     return ( 
@@ -13,6 +14,7 @@ const CardViewer = ({cards, collection, currentCard}) => {
             currentCardNum={currentCardNum}
             setCurrentCardNum={setCurrentCardNum}
             showCard={showCard}/>
+            <NextPrevButton/>
         </div>
      );
 }
