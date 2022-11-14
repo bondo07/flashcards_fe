@@ -1,0 +1,10 @@
+.prev-button, .next-button {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffd745c7;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}

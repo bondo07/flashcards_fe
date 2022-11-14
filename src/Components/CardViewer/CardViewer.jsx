@@ -14,7 +14,11 @@ const CardViewer = ({cards, collection, currentCard}) => {
             currentCardNum={currentCardNum}
             setCurrentCardNum={setCurrentCardNum}
             showCard={showCard}/>
-            <NextPrevButton/>
+            <NextPrevButton cards={cards}
+            currentCardNum={currentCardNum}
+            setCurrentCardNum={setCurrentCardNum}
+            currentCard={currentCard}
+            />
         </div>
      );
 }

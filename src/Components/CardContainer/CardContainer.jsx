@@ -11,7 +11,8 @@ const CardContainer = ({cards, getAllCardsPerCollection, activeCollectionId}) =>
         <div>
             <CardViewer cards={cards}
             currentCard={currentCard}
-            setCurrentCard={setCurrentCard}/>
+            setCurrentCard={setCurrentCard}
+            getAllCardsPerCollection={getAllCardsPerCollection}/>
             <AddCard/>
         </div>
      );
