@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
 const Card = ({cards, currentCardNum, showCard}) => {
-
+    const [flip, setFlip] = useState(false)
 
     return ( 
         <div>
-          <div>{showCard.word}</div>
-          <div>{showCard.definition}</div>
+          <div onClick={() => setFlip(!flip)}>{flip ? showCard.word : showCard.definition}</div>
         </div>
      );
 }

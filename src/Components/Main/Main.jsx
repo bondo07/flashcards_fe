@@ -15,19 +15,19 @@ const Main = () => {
         console.log(response.data)
     }
 
+    useEffect(() => {
+        getAllCollections();
+    }, []);
+    
+    
     async function getAllCardsPerCollection() {
         const response = await axios.get(`http://127.0.0.1:8000/api/collections/${activeCollectionId}/cards/`);
         setCards(response.data)
     }
-
-
-    useEffect(() => {
-        getAllCollections();
-    }, []);
-
+    
     useEffect(() => {
         getAllCardsPerCollection();
-    }, [activeCollectionId, cards, collections]);
+    }, [activeCollectionId, collections]);
 
 
 
