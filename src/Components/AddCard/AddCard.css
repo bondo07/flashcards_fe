@@ -1,0 +1,27 @@
+.new-word-label {
+    font-size: 18px;
+}
+
+.new-def-label {
+    font-size: 18px;
+}
+
+.add-def {
+    width: 17rem;
+    height: 10rem;
+}
+
+.add-title {
+    width: 17rem;
+}
+
+.add-button {
+    height: 27px;
+    width: 95px;
+    background-color: #ffd745c7;
+    border-radius: 5px;
+    border: none;
+    color: #a7061c;
+    font-weight: bold;
+    cursor: pointer;
+}

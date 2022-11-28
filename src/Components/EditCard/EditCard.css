@@ -1,0 +1,28 @@
+.card-def {
+    width: 17rem;
+    height: 10rem;
+}
+
+.card-title {
+    width: 17rem;
+}
+
+.edit-word-label {
+    font-size: 18px;
+}
+
+.edit-def-label {
+    font-size: 18px;
+}
+
+.edit-button {
+    height: 27px;
+    width: 95px;
+    background-color: #ffd745c7;
+    border-radius: 5px;
+    border: none;
+    color: #a7061c;
+    font-weight: bold;
+    cursor: pointer;
+
+}

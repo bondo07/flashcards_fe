@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import './AddCard.css'
 
 const AddCard = ({getAllCardsPerCollection, activeCollectionId}) => {
 
@@ -31,22 +32,22 @@ const AddCard = ({getAllCardsPerCollection, activeCollectionId}) => {
         <form onSubmit={handleSubmit}>
             <div>
                 <div>
-                    <label>New Word:</label>
+                    <label className='new-word-label'>New Word:</label>
                 </div>
                 <div>
-                    <input type='text' placeholder='Type new word...' value={word} onChange={handleWord}/>
+                    <input className='add-title' type='text' placeholder='Type new title...' value={word} onChange={handleWord}/>
                 </div>
             </div>
             <div>
                 <div>
-                    <label>New Definition:</label>
+                    <label className='new-def-label'>New Definition:</label>
                 </div>
                 <div>
-                    <textarea type='text' placeholder='Type new Definition...' value={definition} onChange={handleDefinition}/>
+                    <textarea className='add-def' type='text' placeholder='Type new Definition...' value={definition} onChange={handleDefinition}/>
                 </div>
             </div>
             <div>
-                <button type='submit'>AddCard</button>
+                <button className='add-button' type='submit'>AddCard</button>
             </div>
         </form>
      );

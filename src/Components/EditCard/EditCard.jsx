@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import './EditCard.css'
 
 const EditCard = ({
   getAllCardsPerCollection,
@@ -37,12 +38,13 @@ const EditCard = ({
     <form onSubmit={handleSubmit}>
       <div>
         <div>
-          <label>Edit Word:</label>
+          <label className="edit-word-label">Edit Word:</label>
         </div>
         <div>
           <input
             type="text"
-            placeholder="Edit Word..."
+            placeholder="Edit Card Title..."
+            className="card-title"
             value={word}
             onChange={handleWord}
           />
@@ -50,19 +52,20 @@ const EditCard = ({
       </div>
       <div>
         <div>
-          <label>Edit Definition:</label>
+          <label className="edit-def-label">Edit Definition:</label>
         </div>
         <div>
           <textarea
             type="text"
-            placeholder="Edit Word Definition..."
+            placeholder="Edit Card Definition..."
+            className="card-def"
             value={definition}
             onChange={handleDefinition}
           />
         </div>
       </div>
       <div>
-        <button type="submit">Apply</button>
+        <button className="edit-button" type="submit">Apply</button>
       </div>
     </form>
   );
