@@ -6,6 +6,7 @@ const Card = ({showCard}) => {
     const handleFlip = () => {
         setFlip(!flip)
     }
+  
 
 
     return ( 

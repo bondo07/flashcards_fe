@@ -1,22 +1,22 @@
 import './NextPrevButton.css'
 
-const NextPrevButton = ({cards, currentCardNum, setCurrentCardNum, currentCard}) => {
+const NextPrevButton = ({cards, currentCard, setCurrentCard}) => {
     
     const handleNextCard = () => {
-        const next = currentCardNum + 1;
+        const next = currentCard + 1;
         if(next + 1 > cards.length)
-        {setCurrentCardNum(0)}
+        {setCurrentCard(0)}
         else {
-            setCurrentCardNum(next)
+            setCurrentCard(next)
         }
     }
 
     const handlePrevCard = () => {
-        const prev = currentCardNum - 1;
+        const prev = currentCard - 1;
         if(prev < 0)
-        {setCurrentCardNum(cards.length - 1)}
+        {setCurrentCard(cards.length - 1)}
         else {
-            setCurrentCardNum(prev)
+            setCurrentCard(prev)
         }
 
     }

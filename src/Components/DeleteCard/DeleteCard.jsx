@@ -1,10 +1,10 @@
 import './DeleteCard.css'
 import axios from 'axios';
 
-const DeleteCard = ({getAllCardsPerCollection, activeCollectionId, currentCard, onClose}) => {
+const DeleteCard = ({getAllCardsPerCollection, activeCollectionId, showCard, onClose}) => {
     
-    async function deleteCard (deleteCard) {
-        const response = await axios.delete(`http://127.0.0.1:8000/api/collections/${activeCollectionId}/cards/${currentCard}/`, deleteCard);
+    async function deleteCard () {
+        const response = await axios.delete(`http://127.0.0.1:8000/api/collections/${activeCollectionId}/cards/${showCard.id}/`);
         if(response.status === 204) {
             await getAllCardsPerCollection()
         }
@@ -19,7 +19,6 @@ const DeleteCard = ({getAllCardsPerCollection, activeCollectionId, currentCard, 
         e.preventDefault();
         onClose()
     }
-
 
 
     return ( 
