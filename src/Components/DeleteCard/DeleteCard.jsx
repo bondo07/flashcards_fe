@@ -13,19 +13,18 @@ const DeleteCard = ({getAllCardsPerCollection, activeCollectionId, showCard, onC
     const handleSubmit = (e) => {
         e.preventDefault();
         deleteCard();
+        onClose();
     };
-
-    const handleCancel = (e) => {
-        e.preventDefault();
-        onClose()
-    }
 
 
     return ( 
-        <>
-            <button type='button' onSubmit={handleSubmit}>Delete Card</button>
-            <button type='button' onSubmit={handleCancel}>Cancel</button>
-        </>
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label>Card to Delete: {showCard.word}</label>
+                <button type='submit'>Delete Card</button>
+                <button type='button' onClick={onClose}>Cancel</button>
+            </div>
+        </form>
      );
 }
  
