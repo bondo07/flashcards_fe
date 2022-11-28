@@ -3,6 +3,7 @@ import EditCardButton from "../EditCardButton/EditCardButton";
 import Card from "../Card/Card";
 import NextPrevButton from "../NextPrevButton/NextPrevButton";
 import DeleteCardButton from "../DeleteCardButton/DeleteCardButton";
+import "./CardViewer.css";
 
 const CardViewer = ({
   cards,
@@ -13,19 +14,15 @@ const CardViewer = ({
   setCurrentCard,
   showCard,
 }) => {
-
-
   return showCard ? (
     <div>
-      <DeleteCardButton setShowDeleteModal={setShowDeleteModal} />
-      <span>
+      <span className="card-count">
         <h3>
           Card: {currentCard + 1} / {cards.length}
         </h3>
       </span>
-      <Card
-        showCard={showCard}
-      />
+      <DeleteCardButton setShowDeleteModal={setShowDeleteModal} />
+      <Card showCard={showCard} />
       <NextPrevButton
         cards={cards}
         currentCard={currentCard}

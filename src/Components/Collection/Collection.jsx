@@ -1,13 +1,5 @@
+const Collection = ({ collection }) => {
+  return <option>{collection.title}</option>;
+};
 
-const Collection = ({collection, setActiveCollectionId}) => {
-    
-
-
-    return ( 
-        <option>
-            {collection.title}
-        </option>
-     );
-}
- 
 export default Collection;

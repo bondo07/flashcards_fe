@@ -1,11 +1,11 @@
 import axios from "axios";
 import React, { useState } from "react";
-import './EditCard.css'
+import "./EditCard.css";
 
 const EditCard = ({
   getAllCardsPerCollection,
   activeCollectionId,
-  showCard
+  showCard,
 }) => {
   const [word, setWord] = useState("");
   const [definition, setDefinition] = useState("");
@@ -65,7 +65,9 @@ const EditCard = ({
         </div>
       </div>
       <div>
-        <button className="edit-button" type="submit">Apply</button>
+        <button className="edit-button" type="submit">
+          Apply
+        </button>
       </div>
     </form>
   );

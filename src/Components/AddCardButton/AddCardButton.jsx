@@ -1,11 +1,12 @@
-import './AddCardButton.css'
-const AddCardButton = ({setShowAddModal}) => {
+import "./AddCardButton.css";
+const AddCardButton = ({ setShowAddModal }) => {
+  const handleAddModal = () => setShowAddModal(true);
 
-    const handleAddModal = () => setShowAddModal(true);
+  return (
+    <button className="add-card" onClick={handleAddModal}>
+      Add Card
+    </button>
+  );
+};
 
-    return ( 
-        <button className="add-card" onClick={handleAddModal}>Add Card</button>
-     );
-}
- 
 export default AddCardButton;

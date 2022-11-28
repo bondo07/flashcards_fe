@@ -13,7 +13,7 @@ const CollectionsDropdown = ({
 
   return (
     <div>
-      <select className='dropdown_button' onChange={handleSelect}>
+      <select className="dropdown_button" onChange={handleSelect}>
         {collections.map((collection, i) => {
           return (
             <Collection
