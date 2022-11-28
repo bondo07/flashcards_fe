@@ -10,15 +10,12 @@ const CardContainer = ({
   cards,
   getAllCardsPerCollection,
   activeCollectionId,
-  activeCardId,
-  setActiveCardId,
 }) => {
   const [currentCard, setCurrentCard] = useState(0);
   const [showAddModal, setShowAddModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const showCard = cards[currentCard];
-
 
   const handleCloseModal = () => {
     setShowAddModal(false);

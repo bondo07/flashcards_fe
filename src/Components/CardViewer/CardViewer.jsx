@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import AddCardButton from "../AddCardButton/AddCardButton";
 import EditCardButton from "../EditCardButton/EditCardButton";
 import Card from "../Card/Card";
@@ -7,7 +6,6 @@ import DeleteCardButton from "../DeleteCardButton/DeleteCardButton";
 
 const CardViewer = ({
   cards,
-  collection,
   setShowEditModal,
   setShowAddModal,
   setShowDeleteModal,
@@ -16,14 +14,16 @@ const CardViewer = ({
   showCard,
 }) => {
 
+
   return showCard ? (
     <div>
       <DeleteCardButton setShowDeleteModal={setShowDeleteModal} />
+      <span>
+        <h3>
+          Card: {currentCard + 1} / {cards.length}
+        </h3>
+      </span>
       <Card
-        cards={cards}
-        collection={collection}
-        currentCard={currentCard}
-        setCurrentCard={setCurrentCard}
         showCard={showCard}
       />
       <NextPrevButton
