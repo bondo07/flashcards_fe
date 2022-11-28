@@ -20,9 +20,11 @@ const DeleteCard = ({getAllCardsPerCollection, activeCollectionId, showCard, onC
     return ( 
         <form onSubmit={handleSubmit}>
             <div>
-                <label>Card to Delete: {showCard.word}</label>
+                <label className='del-card-label'>Card to Delete: {showCard.word}</label>
                 <button type='submit'>Delete Card</button>
-                <button type='button' onClick={onClose}>Cancel</button>
+                <div className='cancel-button'>
+                    <button type='button' onClick={onClose}>Cancel</button>
+                </div>
             </div>
         </form>
      );

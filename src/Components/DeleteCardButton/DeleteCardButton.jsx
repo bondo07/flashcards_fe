@@ -4,7 +4,9 @@ const DeleteCardButton = ({setShowDeleteModal}) => {
     const handleDeleteModal = () => setShowDeleteModal(true);
 
     return ( 
-        <button className="delete-card" onClick={handleDeleteModal}>Delete Card</button>
+        <div className='delete-postition'>
+            <button className="delete-card" onClick={handleDeleteModal}>Delete Card</button>
+        </div>
      );
 }
  
